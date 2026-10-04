@@ -69,3 +69,178 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .why-item p{font-size:10px}
   .why-icon,.why-icon svg{width:38px;height:38px}
 }
+
+/* AIRYS FINAL PRODUCTION VISUAL SYSTEM — do not override the dark brand theme */
+:root{
+  --bg:#05090e;
+  --bg2:#08121a;
+  --panel:#0b151e;
+  --panel2:#0e1b25;
+  --gold:#f2a85c;
+  --gold2:#ffcf8a;
+  --orange:#e67832;
+  --text:#f4f6f8;
+  --muted:#a8b2ba;
+  --line:rgba(242,168,92,.16);
+  --shadow:0 25px 80px rgba(0,0,0,.34);
+}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;font-size:15px;line-height:1.65;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+section[id]{scroll-margin-top:88px}
+.container{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+.section{padding:96px 0}
+
+/* Header: fixed proportions, exact logo asset, balanced navigation */
+.site-header{height:82px;background:rgba(5,9,14,.94);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(18px)}
+.nav-wrap{height:100%}
+.brand{width:164px;height:52px;border-radius:5px}
+.brand img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;background:transparent}
+.nav{gap:27px;font-size:13px;font-weight:500}
+.nav>a{color:#c7d0d6;padding:8px 0;line-height:1.2}
+.nav>a:hover,.nav>a.active{color:#fff}
+.nav>a.active:after{height:2px;width:24px;bottom:-8px;background:var(--gold)}
+.nav-cta{padding:10px 17px!important;border-radius:6px;font-weight:600}
+
+/* Home */
+.home-hero{min-height:680px;padding:70px 0 64px;background:radial-gradient(circle at 78% 45%,rgba(230,120,50,.12),transparent 28%),linear-gradient(135deg,#05090e,#07131b 62%,#081018)}
+.home-container{width:min(1180px,calc(100% - 48px));min-height:546px;grid-template-columns:minmax(0,1.02fr) minmax(440px,.98fr);gap:46px}
+.home-copy{max-width:610px}
+.home-eyebrow{font-size:10px;letter-spacing:2.7px;margin-bottom:16px}
+.home-copy h1{font-size:58px;line-height:1.08;letter-spacing:-2.2px;margin-bottom:22px}
+.home-copy>p{font-size:16px;line-height:1.7;max-width:570px;margin-bottom:29px}
+.home-actions{gap:12px}
+.home-btn{min-height:46px;padding:12px 21px;font-size:13px}
+.home-trusted{margin-top:36px;padding-top:17px}
+.home-trusted small{font-size:9px;letter-spacing:2px;margin-bottom:13px}
+.home-trusted>div{gap:27px;font-size:14px}
+.home-art{max-width:600px;min-height:500px}
+.home-art img{width:116%;max-height:530px;margin:-2% -8% 0 0}
+
+/* Shared headings and copy */
+.eyebrow{font-size:10px;letter-spacing:2.7px;margin-bottom:15px}
+.section-heading{max-width:720px;margin-bottom:42px}
+.section-heading h2{font-size:38px;line-height:1.15;letter-spacing:-1.1px;margin-bottom:12px}
+.section-heading p,.about p,.contact-copy>p{font-size:15px;line-height:1.75;color:var(--muted)}
+
+/* About */
+.about{padding-top:100px;padding-bottom:100px}
+.about-grid{gap:72px}
+.about h2,.contact h2{font-size:43px;line-height:1.1;letter-spacing:-1.4px;margin-bottom:19px}
+.about p{max-width:560px;margin-bottom:27px}
+.stats-grid{gap:13px}
+.stat{min-height:154px;padding:27px 29px}
+.stat strong{font-size:40px;line-height:1.05}
+.stat span{font-size:13px;margin-top:6px}
+
+/* Services */
+.services-section{padding-top:96px;padding-bottom:96px}
+.service-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:13px}
+.service-card{min-height:236px;padding:23px 18px;border-radius:7px}
+.service-card .number{font-size:10px}
+.service-card .service-icon{width:54px;height:54px;margin:20px 0 16px}
+.service-card .service-icon svg{width:46px;height:46px}
+.service-card h3{font-size:14px;line-height:1.35;letter-spacing:.35px;margin-bottom:8px}
+.service-card p{font-size:12.5px;line-height:1.62;color:#a8b2ba}
+
+/* Why Us — same compact four-column composition as the supplied reference, but dark AIRYS theme */
+.why-section{padding:82px 0 96px;background:#05090e}
+.why-heading{text-align:center;margin:0 0 12px}
+.why-heading .eyebrow{justify-content:center;color:var(--gold);font-size:10px;letter-spacing:2.2px}
+.why-panel{grid-template-columns:repeat(4,minmax(0,1fr));padding:23px 16px;border:1px solid rgba(242,168,92,.18);border-radius:8px;background:linear-gradient(100deg,rgba(242,168,92,.055),rgba(255,255,255,.012));box-shadow:none}
+.why-item{min-width:0;min-height:78px;display:flex;align-items:center;gap:14px;padding:4px 21px;border-right:1px solid rgba(255,255,255,.09)}
+.why-item:first-child{padding-left:7px}
+.why-item:last-child{border-right:0;padding-right:7px}
+.why-icon{flex:0 0 40px;width:40px;height:40px;color:var(--gold)}
+.why-icon svg{width:40px;height:40px;stroke-width:1.55}
+.why-item h3{font-family:Inter,Arial,sans-serif;font-size:9px;line-height:1.25;letter-spacing:.25px;color:#f4f6f8;margin:0 0 5px;font-weight:700}
+.why-item p{font-family:Inter,Arial,sans-serif;font-size:8px;line-height:1.5;color:#a8b2ba;margin:0}
+
+/* Industries */
+.industries{padding-top:96px;padding-bottom:96px}
+.industry-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.industry-grid div{padding:21px 23px;font-size:14px}
+
+/* Contact */
+.contact{padding-top:100px;padding-bottom:100px}
+.contact-grid{gap:68px}
+.contact-details{gap:12px;margin-top:27px}
+.contact-details>a,.contact-details>div{font-size:14px}
+.contact-form{gap:15px;padding:29px}
+.form-title{font-size:20px}
+.contact-form label{font-size:12px}
+.contact-form input,.contact-form select,.contact-form textarea{font-size:14px;padding:11px 13px}
+
+/* Footer */
+.footer{padding-top:48px}
+.footer-grid{gap:32px;padding-bottom:38px}
+.footer-logo{width:164px;height:55px;background:transparent}
+.footer p,.footer a,.footer span{font-size:12px}
+.footer h4{font-size:10px;letter-spacing:1.8px;margin-bottom:16px}
+.copyright{font-size:10px;padding:16px}
+
+/* Tablet */
+@media(max-width:1050px){
+  .site-header{height:78px}
+  .nav{gap:15px}
+  .home-container{grid-template-columns:1fr;gap:34px;text-align:center}
+  .home-copy{max-width:760px;margin:auto}
+  .home-eyebrow{justify-content:center}
+  .home-copy>p{margin-left:auto;margin-right:auto}
+  .home-actions,.home-trusted>div{justify-content:center}
+  .home-art{justify-self:center;max-width:650px;min-height:420px}
+  .home-art img{width:110%;margin:0 -5%}
+  .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .why-panel{grid-template-columns:1fr 1fr;padding:20px}
+  .why-item{padding:17px 14px!important;border-right:0;border-bottom:1px solid rgba(255,255,255,.09)}
+  .why-item:nth-child(odd){border-right:1px solid rgba(255,255,255,.09)}
+  .why-item:nth-child(3),.why-item:nth-child(4){border-bottom:0}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .about-grid{gap:48px}
+  .about>*,.contact-copy{max-width:none}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+
+/* Mobile */
+@media(max-width:720px){
+  .site-header{height:72px}
+  .container{width:min(100% - 30px,1180px)}
+  .brand{width:145px;height:48px}
+  .menu-toggle{display:block;font-size:25px}
+  .nav{top:72px;font-size:15px;gap:0;padding:17px 20px}
+  .nav>a{padding:11px 4px}
+  .nav>a.active:after{display:none}
+  .nav-cta{margin-top:7px}
+  .section{padding:72px 0}
+  .home-hero{min-height:auto;padding:53px 0 57px}
+  .home-container{width:min(100% - 30px,1180px);min-height:auto;gap:27px}
+  .home-copy h1{font-size:40px;letter-spacing:-1.5px;line-height:1.08}
+  .home-copy>p{font-size:14px;line-height:1.7}
+  .home-actions{flex-direction:column;align-items:stretch}
+  .home-btn{width:100%}
+  .home-trusted{margin-top:29px}
+  .home-trusted>div{gap:16px;font-size:12px}
+  .home-art{min-height:auto;width:100%;max-width:100%;overflow:visible}
+  .home-art img{width:112%;margin:0 -6%;max-height:none}
+  .section-heading{margin-bottom:34px}
+  .section-heading h2{font-size:30px}
+  .about h2,.contact h2{font-size:34px}
+  .stats-grid,.industry-grid,.contact-form,.footer-grid{grid-template-columns:1fr}
+  .stat{text-align:center}
+  .stat-icon{margin-left:auto;margin-right:auto}
+  .service-card{text-align:center}
+  .service-card .service-icon{margin-left:auto;margin-right:auto}
+  .service-card .number{text-align:left}
+  .service-card h3{font-size:16px}
+  .service-card p{font-size:14px}
+  .why-section{padding:72px 0}
+  .why-panel{grid-template-columns:1fr;padding:13px}
+  .why-item,.why-item:nth-child(odd){border-right:0;border-bottom:1px solid rgba(255,255,255,.09);padding:17px 8px!important}
+  .why-item:last-child{border-bottom:0}
+  .why-item h3{font-size:11px}
+  .why-item p{font-size:10px}
+  .why-icon,.why-icon svg{width:38px;height:38px}
+  .contact-grid{gap:42px}
+  .contact-form input,.contact-form select,.contact-form textarea{font-size:16px}
+  .footer p,.footer a,.footer span{font-size:13px}
+}
