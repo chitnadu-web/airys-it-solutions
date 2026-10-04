@@ -33,3 +33,6 @@
 .services-section .service-card:nth-child(8) .service-icon svg{transform:scale(.91)}
 .services-section .service-card:nth-child(9) .service-icon svg{transform:scale(.93)}
 .services-section .service-card:nth-child(10) .service-icon svg{transform:scale(.88)}
+
+/* Reference-style Why Us and About icons */
+.why-section .why-icon{width:62px!important;height:62px!important;display:grid!important;place-items:center!important;color:#F2A85C!important}.why-section .why-icon svg{width:58px!important;height:58px!important;fill:none;stroke:#F2A85C!important;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}.about .stat-icon{width:58px;height:58px;margin:0 auto 15px;display:grid;place-items:center;color:#F2A85C}.about .stat-icon svg{width:54px;height:54px;fill:none;stroke:#F2A85C;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}.about .stat strong{display:block}.about .stat{padding-top:24px}
