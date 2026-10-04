@@ -15,3 +15,6 @@
 
 /* Reference icon treatment */
 .services-section .service-card .service-icon{color:#df786f!important}.services-section .service-card .service-icon svg{stroke:currentColor!important;fill:none!important;filter:none!important;stroke-width:1.55!important}.services-section .service-card:hover .service-icon{color:#df786f!important}
+
+/* Match reference icon colour and weight */
+.services-section .service-card .service-icon{color:#e67b73!important}.services-section .service-card .service-icon svg{stroke:#e67b73!important;color:#e67b73!important;stroke-width:1.45!important;fill:none!important}.services-section .service-card:hover .service-icon{color:#e67b73!important}
