@@ -58,3 +58,6 @@ nav a,.nav a{color:#2a2323!important}.nav a:hover,nav a:hover,.nav a.active,nav 
 .btn-primary,.home-btn-primary{background:linear-gradient(135deg,#d4736c,#b9544e)!important;color:#fff!important}.btn-ghost,.home-btn-outline{color:#c4605a!important;border-color:#e8998f!important;background:#fff!important}
 .eyebrow,.home-eyebrow,.section-eyebrow,.lab{color:#c4605a!important}.hero-copy h1 strong,.home-copy h1 span{color:#c4605a!important}
 footer{background:#fff!important;color:#2a2323!important;border-color:#f1dcd9!important}footer h5{color:#c4605a!important}
+
+/* Match reference icon palette and treatment */
+.service-icon,.why-icon,.stat-icon,.icon,.g{color:#c4605a!important}.service-icon svg,.why-icon svg,.stat-icon svg,.icon svg,.g svg{stroke:#c4605a!important;color:#c4605a!important;fill:none!important}.service-icon svg{filter:none!important}.ic{color:#c4605a!important;background:#fff!important;box-shadow:0 4px 14px rgba(196,96,90,.18)!important}.ic svg{stroke:#c4605a!important}
