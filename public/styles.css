@@ -18,3 +18,6 @@
 
 /* Match reference icon colour and weight */
 .services-section .service-card .service-icon{color:#e67b73!important}.services-section .service-card .service-icon svg{stroke:#e67b73!important;color:#e67b73!important;stroke-width:1.45!important;fill:none!important}.services-section .service-card:hover .service-icon{color:#e67b73!important}
+
+/* Exact gold/orange icon colour sampled from the supplied reference */
+.services-section .service-card .service-icon,.services-section .service-card:hover .service-icon{color:#F2A85C!important}.services-section .service-card .service-icon svg{stroke:#F2A85C!important;color:#F2A85C!important}
