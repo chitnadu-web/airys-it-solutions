@@ -21,3 +21,15 @@
 
 /* Exact gold/orange icon colour sampled from the supplied reference */
 .services-section .service-card .service-icon,.services-section .service-card:hover .service-icon{color:#F2A85C!important}.services-section .service-card .service-icon svg{stroke:#F2A85C!important;color:#F2A85C!important}
+
+/* Optical icon sizing: normalize visible artwork, not just the SVG box */
+.services-section .service-card:nth-child(1) .service-icon svg{transform:scale(.96)}
+.services-section .service-card:nth-child(2) .service-icon svg{transform:scale(.90)}
+.services-section .service-card:nth-child(3) .service-icon svg{transform:scale(.94)}
+.services-section .service-card:nth-child(4) .service-icon svg{transform:scale(.94)}
+.services-section .service-card:nth-child(5) .service-icon svg{transform:scale(.92)}
+.services-section .service-card:nth-child(6) .service-icon svg{transform:scale(.94)}
+.services-section .service-card:nth-child(7) .service-icon svg{transform:scale(.90)}
+.services-section .service-card:nth-child(8) .service-icon svg{transform:scale(.91)}
+.services-section .service-card:nth-child(9) .service-icon svg{transform:scale(.93)}
+.services-section .service-card:nth-child(10) .service-icon svg{transform:scale(.88)}
