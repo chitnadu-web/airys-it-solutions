@@ -46,3 +46,15 @@
 .home-copy{padding:25px 0 20px}.home-eyebrow{border:1px solid rgba(242,168,92,.25);background:rgba(242,168,92,.035);color:var(--gold);padding:6px 12px}.home-copy h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:47px;line-height:1.16;letter-spacing:-1.2px;color:#fff}.home-copy h1 span{color:var(--gold2)}.home-copy p{color:var(--muted);font-size:15px;line-height:1.8}.home-btn{border-radius:6px}.home-btn-primary{background:linear-gradient(135deg,var(--gold),var(--orange));color:#090d11;border-color:transparent}.home-btn-outline{color:var(--gold2);border:1px solid rgba(242,168,92,.45);background:transparent}.home-trusted small{color:#7d8992}.home-trusted>div{color:#87929a}.home-art{min-height:570px}.home-art img{width:100%;max-width:650px;object-fit:contain;border-radius:10px;display:block}
 @media(max-width:900px){.home-container{grid-template-columns:1fr;width:min(100% - 40px,700px);text-align:center}.home-copy{padding-top:45px}.home-copy p{margin-left:auto;margin-right:auto}.home-actions,.home-trusted>div{justify-content:center}.home-art{min-height:auto}.home-art img{max-width:620px}.home-hero{padding-bottom:25px}}
 @media(max-width:560px){.home-copy h1{font-size:36px}.home-actions{flex-direction:column}.home-btn{width:100%}.home-trusted>div{gap:16px}.home-art img{width:100%}}
+
+/* AIRYS reference palette from uploaded airys.html */
+:root{--bg:#fff!important;--card:#fff!important;--ink:#2a2323!important;--text:#2a2323!important;--muted:#5b5252!important;--mut:#5b5252!important;--gold:#c4605a!important;--gold2:#e8998f!important;--orange:#b9544e!important;--line:#f1dcd9!important;--tint:#fdf3f1!important;--border:#f1dcd9!important}
+body{background:#fff!important;color:#2a2323!important}
+header,.site-header,.navbar{background:#fff!important;color:#2a2323!important;border-color:#f1dcd9!important}
+nav a,.nav a{color:#2a2323!important}.nav a:hover,nav a:hover,.nav a.active,nav a.active{color:#c4605a!important}
+.section,.section-inner,.card,.service-card,.stat,.why-panel,.contact-card,.portfolio-card,.blog-card{background:#fff!important;border-color:#f1dcd9!important}
+.services-section .service-card .service-icon,.services-section .service-card:hover .service-icon,.why-section .why-icon,.about .stat-icon{color:#c4605a!important}
+.services-section .service-card .service-icon svg,.why-section .why-icon svg,.about .stat-icon svg{stroke:#c4605a!important}
+.btn-primary,.home-btn-primary{background:linear-gradient(135deg,#d4736c,#b9544e)!important;color:#fff!important}.btn-ghost,.home-btn-outline{color:#c4605a!important;border-color:#e8998f!important;background:#fff!important}
+.eyebrow,.home-eyebrow,.section-eyebrow,.lab{color:#c4605a!important}.hero-copy h1 strong,.home-copy h1 span{color:#c4605a!important}
+footer{background:#fff!important;color:#2a2323!important;border-color:#f1dcd9!important}footer h5{color:#c4605a!important}
