@@ -752,3 +752,171 @@ body{
   }
   .home-container{padding-top:145px !important}
 }
+
+/* REFERENCE SCREENSHOT ALIGNMENT — final clean layout */
+.site-header{
+  position:absolute !important;
+  top:0;left:0;right:0;
+  height:108px !important;
+  display:flex;
+  align-items:center;
+  z-index:50;
+  background:#020b15 !important;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+}
+.site-header .nav-wrap{
+  width:min(1460px,calc(100% - 80px));
+  height:100%;
+}
+.site-header .brand{
+  display:block !important;
+  width:320px !important;
+  height:88px !important;
+  overflow:visible;
+  background:transparent !important;
+}
+.site-header .brand img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  background:transparent !important;
+  filter:drop-shadow(0 5px 14px rgba(255,171,53,.12));
+}
+.nav{
+  gap:38px !important;
+  font-size:16px !important;
+}
+.nav>a{
+  color:#d4dbe1 !important;
+  padding:9px 0;
+}
+.nav>a.active{color:#fff !important}
+.nav>a.active:after{
+  width:52px !important;
+  height:2px !important;
+  bottom:-13px !important;
+  background:#ffc65a !important;
+  box-shadow:0 0 12px rgba(255,198,90,.45);
+}
+.nav-cta{
+  padding:14px 24px !important;
+  min-width:191px;
+  height:58px;
+  border-radius:10px !important;
+  border-color:rgba(255,198,90,.9) !important;
+  background:rgba(255,198,90,.02) !important;
+  color:#ffd77d !important;
+}
+
+/* Use the supplied artwork exactly; the opaque header masks its embedded top-left logo. */
+.home-hero{
+  min-height:941px !important;
+  height:941px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  background:#020b15 url('/airys-home-background.webp') center -10px / cover no-repeat !important;
+}
+.home-container{
+  width:min(1460px,calc(100% - 80px)) !important;
+  min-height:650px !important;
+  padding-top:205px !important;
+  display:block !important;
+}
+.home-copy{max-width:790px !important}
+.home-eyebrow{
+  font-size:14px !important;
+  letter-spacing:4px !important;
+  color:#ffc65a !important;
+  margin-bottom:25px !important;
+}
+.home-copy h1{
+  font-size:66px !important;
+  line-height:1.08 !important;
+  letter-spacing:-2.8px !important;
+  margin:0 0 25px !important;
+  font-weight:600;
+}
+.home-copy h1 span{color:#ffd77d !important}
+.home-copy>p{
+  font-size:17px !important;
+  line-height:1.7 !important;
+  max-width:750px !important;
+  margin:0 0 34px !important;
+  color:#c5ced6 !important;
+}
+.home-actions{gap:26px !important}
+.home-btn{
+  min-height:64px !important;
+  height:64px !important;
+  padding:15px 30px !important;
+  border-radius:10px !important;
+  font-size:16px !important;
+}
+.home-btn-primary{min-width:205px !important}
+.home-btn-outline{min-width:203px !important}
+
+/* Stats match target: wide, equal, low on hero */
+.home-stats{
+  position:absolute !important;
+  z-index:5 !important;
+  width:min(1460px,calc(100% - 80px)) !important;
+  left:50% !important;
+  bottom:61px !important;
+  transform:translateX(-50%) !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:20px !important;
+}
+.home-stat{
+  height:200px !important;
+  min-height:200px !important;
+  padding:28px 40px !important;
+  border-radius:10px !important;
+  background:linear-gradient(145deg,rgba(7,22,35,.93),rgba(2,12,21,.92)) !important;
+  border:1px solid rgba(255,255,255,.13) !important;
+}
+.home-stat .stat-icon svg{width:43px !important;height:43px !important}
+.home-stat strong{
+  font-size:46px !important;
+  color:#ffd77d !important;
+  line-height:1.1;
+}
+.home-stat span{font-size:16px !important;color:#aeb9c2 !important}
+
+/* Remove all legacy hero-generated effects because the supplied artwork already contains them. */
+.home-hero:before,.home-hero:after{display:none !important}
+
+@media(max-width:1050px){
+  .site-header{height:88px !important}
+  .site-header .nav-wrap{width:calc(100% - 40px)}
+  .site-header .brand{width:240px !important;height:72px !important}
+  .nav{gap:20px !important;font-size:14px !important}
+  .home-hero{height:900px !important;min-height:900px !important}
+  .home-container{width:calc(100% - 40px) !important;padding-top:175px !important}
+  .home-copy h1{font-size:54px !important}
+  .home-stats{width:calc(100% - 40px) !important;bottom:30px !important}
+}
+@media(max-width:720px){
+  .site-header{height:76px !important}
+  .site-header .brand{width:175px !important;height:60px !important}
+  .nav{display:none !important}
+  .home-hero{height:auto !important;min-height:1000px !important;background-size:auto 100% !important;background-position:center top !important}
+  .home-container{width:calc(100% - 30px) !important;padding-top:125px !important;text-align:left !important}
+  .home-copy h1{font-size:42px !important;letter-spacing:-1.6px !important}
+  .home-copy>p{font-size:14px !important}
+  .home-actions{gap:12px !important;flex-direction:column !important}
+  .home-btn,.home-btn-primary,.home-btn-outline{width:100% !important}
+  .home-stats{
+    position:relative !important;
+    left:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    width:calc(100% - 30px) !important;
+    margin:35px auto 0 !important;
+    grid-template-columns:1fr 1fr !important;
+  }
+  .home-stat{height:150px !important;min-height:150px !important;padding:20px 18px !important}
+  .home-stat strong{font-size:35px !important}
+  .home-stat span{font-size:12px !important}
+}
