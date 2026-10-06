@@ -1228,3 +1228,61 @@ body{font-size:15px !important;line-height:1.65 !important}
   .service-card h3{font-size:15px !important}
   .service-card p,.why-item p{font-size:13px !important}
 }
+
+
+/* HEADER — match supplied reference: solid dark surface, larger logo, balanced navigation */
+.site-header{
+  height:108px !important;
+  background:rgba(3,10,17,.97) !important;
+  backdrop-filter:blur(6px) !important;
+  -webkit-backdrop-filter:blur(6px) !important;
+  border-bottom:1px solid rgba(255,255,255,.08) !important;
+}
+.site-header>.container{
+  width:min(1420px,calc(100% - 80px)) !important;
+  height:100% !important;
+}
+.site-header .brand{
+  width:320px !important;
+  height:88px !important;
+  flex:0 0 320px !important;
+}
+.site-header .brand img{object-fit:contain !important}
+.site-header .nav{
+  gap:36px !important;
+  font-size:16px !important;
+  font-weight:500 !important;
+}
+.site-header .nav>a:not(.nav-cta){color:#d9dee3 !important;padding:10px 0 !important}
+.site-header .nav>a:not(.nav-cta):hover,
+.site-header .nav>a.active{color:#fff !important}
+.site-header .nav>a.active:after{width:52px !important;height:2px !important;bottom:-8px !important}
+.site-header .nav-cta{
+  min-width:194px !important;
+  height:58px !important;
+  padding:0 24px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border:1px solid #f2b544 !important;
+  border-radius:10px !important;
+  background:rgba(5,12,19,.72) !important;
+  color:#f7c65b !important;
+  font-family:"Inter",Arial,sans-serif !important;
+  font-size:16px !important;
+  font-weight:600 !important;
+  box-shadow:0 0 18px rgba(242,181,68,.08) !important;
+}
+.site-header .nav-cta:hover{background:rgba(242,181,68,.08) !important;color:#ffd978 !important}
+.site-header .nav-cta span{margin-left:10px !important;color:inherit !important}
+@media(max-width:1050px){
+  .site-header{height:92px !important}
+  .site-header>.container{width:calc(100% - 40px) !important}
+  .site-header .brand{width:240px !important;height:72px !important;flex-basis:240px !important}
+  .site-header .nav{gap:20px !important;font-size:14px !important}
+  .site-header .nav-cta{min-width:155px !important;height:50px !important;font-size:14px !important}
+}
+@media(max-width:720px){
+  .site-header{height:76px !important}
+  .site-header .brand{width:175px !important;height:60px !important;flex-basis:175px !important}
+}
