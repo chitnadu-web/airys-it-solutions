@@ -981,3 +981,74 @@ body{
 @media(max-width:720px){
   .home-hero{background-position:center -10px !important}
 }
+
+
+/* HOMEPAGE FINAL — supplied AIRYS background is the single hero artwork */
+.home-hero{
+  position:relative !important;
+  height:941px !important;
+  min-height:941px !important;
+  overflow:hidden !important;
+  padding:0 !important;
+  background:#020b15 url('/airys-home-background.webp') center center / cover no-repeat !important;
+}
+.home-hero::before,.home-hero::after{display:none !important}
+.home-container{
+  width:min(1460px,calc(100% - 80px)) !important;
+  min-height:0 !important;
+  padding-top:205px !important;
+  display:block !important;
+  position:relative !important;
+  z-index:3 !important;
+}
+.home-copy{max-width:790px !important}
+.home-eyebrow{margin-bottom:25px !important;color:#ffc65a !important}
+.home-copy h1{font-size:64px !important;line-height:1.08 !important;letter-spacing:-2.6px !important;margin:0 0 25px !important}
+.home-copy h1 span{color:#ffd77d !important}
+.home-copy>p{font-size:17px !important;line-height:1.7 !important;max-width:750px !important;color:#c5ced6 !important;margin:0 0 34px !important}
+.home-actions{gap:24px !important}
+.home-btn{height:62px !important;min-height:62px !important;padding:15px 30px !important;border-radius:10px !important;font-size:16px !important}
+.home-btn-primary{background:linear-gradient(135deg,#ffd36b,#f2a12b) !important}
+.home-btn-outline{background:rgba(2,11,21,.35) !important;border-color:rgba(255,255,255,.22) !important}
+.home-art{display:none !important}
+.home-stats{
+  position:absolute !important;
+  left:50% !important;
+  bottom:32px !important;
+  transform:translateX(-50%) !important;
+  width:min(1460px,calc(100% - 80px)) !important;
+  z-index:5 !important;
+  display:grid !important;
+  grid-template-columns:repeat(4,1fr) !important;
+  gap:20px !important;
+}
+.home-stat{
+  height:190px !important;
+  min-height:190px !important;
+  padding:27px 40px !important;
+  border-radius:10px !important;
+  background:rgba(4,16,27,.88) !important;
+  border:1px solid rgba(255,255,255,.13) !important;
+  box-shadow:0 18px 45px rgba(0,0,0,.25) !important;
+}
+.home-stat .stat-icon{color:#ffc65a !important}
+.home-stat strong{font-size:46px !important;color:#ffd77d !important}
+.home-stat span{font-size:16px !important;color:#aeb9c2 !important}
+@media(max-width:1050px){
+  .home-hero{height:900px !important;min-height:900px !important}
+  .home-container{width:calc(100% - 40px) !important;padding-top:170px !important}
+  .home-copy h1{font-size:54px !important}
+  .home-stats{width:calc(100% - 40px) !important;bottom:25px !important}
+}
+@media(max-width:720px){
+  .home-hero{height:auto !important;min-height:1000px !important;background-size:auto 100% !important;background-position:center top !important}
+  .home-container{width:calc(100% - 30px) !important;padding-top:120px !important}
+  .home-copy h1{font-size:42px !important;letter-spacing:-1.5px !important}
+  .home-copy>p{font-size:14px !important}
+  .home-actions{flex-direction:column !important;gap:12px !important}
+  .home-btn{width:100% !important}
+  .home-stats{position:relative !important;left:auto !important;bottom:auto !important;transform:none !important;width:calc(100% - 30px) !important;margin:30px auto 0 !important;grid-template-columns:1fr 1fr !important}
+  .home-stat{height:150px !important;min-height:150px !important;padding:20px 18px !important}
+  .home-stat strong{font-size:35px !important}
+  .home-stat span{font-size:12px !important}
+}
