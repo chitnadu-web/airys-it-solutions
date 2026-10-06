@@ -1170,3 +1170,26 @@ body{
 @media(max-width:720px){
   .site-header .brand{width:175px !important;height:60px !important}
 }
+
+
+/* FINAL HOMEPAGE / SERVICES ALIGNMENT */
+.home-actions{display:none !important}
+.nav-cta{min-width:190px !important;justify-content:center !important;text-align:center !important}
+.service-card .number{display:none !important}
+.service-card .service-icon{
+  width:56px !important;
+  height:56px !important;
+  margin:22px auto 22px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.service-card .service-icon svg{
+  width:52px !important;
+  height:52px !important;
+  display:block !important;
+}
+@media(max-width:720px){
+  .nav-cta{min-width:0 !important}
+  .service-card .service-icon{margin:18px auto 20px !important}
+}
