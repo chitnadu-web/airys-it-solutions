@@ -1340,3 +1340,34 @@ body{font-size:15px !important;line-height:1.65 !important}
   .service-card{min-height:220px !important;padding:20px 18px 22px !important}
   .service-card .service-icon{margin:5px auto 16px !important}
 }
+
+
+/* HEADER — slightly smaller with a subtle transparent finish */
+.site-header{
+  height:92px !important;
+  background:rgba(3,10,17,.78) !important;
+  backdrop-filter:blur(12px) !important;
+  -webkit-backdrop-filter:blur(12px) !important;
+}
+.site-header>.container{height:100% !important}
+.site-header .brand{
+  width:285px !important;
+  height:78px !important;
+  flex-basis:285px !important;
+}
+.site-header .nav{gap:32px !important;font-size:15px !important}
+.site-header .nav-cta{
+  min-width:185px !important;
+  height:54px !important;
+  font-size:15px !important;
+}
+@media(max-width:1050px){
+  .site-header{height:84px !important}
+  .site-header .brand{width:230px !important;height:68px !important;flex-basis:230px !important}
+  .site-header .nav{gap:20px !important;font-size:14px !important}
+  .site-header .nav-cta{min-width:150px !important;height:48px !important;font-size:14px !important}
+}
+@media(max-width:720px){
+  .site-header{height:72px !important}
+  .site-header .brand{width:175px !important;height:60px !important;flex-basis:175px !important}
+}
