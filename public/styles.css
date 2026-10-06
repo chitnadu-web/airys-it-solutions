@@ -710,3 +710,45 @@ body{
     margin-top:0;
   }
 }
+
+/* FINAL HOMEPAGE LAYERING — artwork owns the entire hero, header overlays it */
+.site-header{
+  position:absolute !important;
+  top:0;
+  left:0;
+  right:0;
+  z-index:20;
+  background:transparent !important;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+}
+.site-header .brand{display:none !important}
+.home-hero{
+  margin-top:0 !important;
+  min-height:941px !important;
+  padding:0 !important;
+  background:#020a13 url('/airys-home-background.webp') center top / cover no-repeat !important;
+}
+.home-container{
+  min-height:650px !important;
+  padding-top:225px !important;
+  position:relative;
+  z-index:2;
+}
+.home-copy{max-width:790px}
+.home-eyebrow{margin-bottom:25px}
+.home-stats{bottom:35px !important}
+@media(max-width:1050px){
+  .home-hero{min-height:900px !important}
+  .home-container{padding-top:190px !important}
+}
+@media(max-width:720px){
+  .site-header{position:absolute !important}
+  .home-hero{
+    min-height:900px !important;
+    background-size:auto 100% !important;
+    background-position:center top !important;
+  }
+  .home-container{padding-top:145px !important}
+}
