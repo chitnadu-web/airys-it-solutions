@@ -666,7 +666,7 @@ body{
   min-height:940px;
   padding:0;
   overflow:hidden;
-  background:#020a13 url('/airys-home-background-clean.jpg.png') center top / cover no-repeat !important;
+  background:#020a13 url('/airys-home-background-clean.png') center top / cover no-repeat !important;
 }
 .home-hero:before,.home-hero:after,.home-art,.hero-mark{display:none !important}
 .home-container{
@@ -728,7 +728,7 @@ body{
   margin-top:0 !important;
   min-height:941px !important;
   padding:0 !important;
-  background:#020a13 url('/airys-home-background-clean.jpg.png') center top / cover no-repeat !important;
+  background:#020a13 url('/airys-home-background-clean.png') center top / cover no-repeat !important;
 }
 .home-container{
   min-height:650px !important;
@@ -816,7 +816,7 @@ body{
   height:941px !important;
   padding:0 !important;
   overflow:hidden !important;
-  background:#020b15 url('/airys-home-background-clean.jpg.png') center -10px / cover no-repeat !important;
+  background:#020b15 url('/airys-home-background-clean.png') center -10px / cover no-repeat !important;
 }
 .home-container{
   width:min(1460px,calc(100% - 80px)) !important;
@@ -990,7 +990,7 @@ body{
   min-height:941px !important;
   overflow:hidden !important;
   padding:0 !important;
-  background:#020b15 url('/airys-home-background-clean.jpg.png') center center / cover no-repeat !important;
+  background:#020b15 url('/airys-home-background-clean.png') center center / cover no-repeat !important;
 }
 .home-hero::before,.home-hero::after{display:none !important}
 .home-container{
