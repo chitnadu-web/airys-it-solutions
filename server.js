@@ -52,10 +52,8 @@ app.post("/api/contact",async(req,res)=>{
         subject,
         textbody,
         reply_to:[{
-          email_address:{
-            address:email,
-            name:name
-          }
+          address:email,
+          name:name
         }]
       })
     });
