@@ -620,3 +620,42 @@ body{
   .home-stat strong{font-size:35px}
   .home-stat span{font-size:12px}
 }
+
+/* HERO LOGO CROPPING FIX — show the AIRYS A mark only, never the wordmark */
+.home-art{
+  max-width:650px;
+  min-height:560px;
+  overflow:visible;
+}
+.hero-mark{
+  width:540px;
+  height:560px;
+  position:relative;
+  overflow:hidden;
+  flex:0 0 540px;
+}
+.hero-mark img{
+  width:2100px;
+  max-width:none;
+  height:auto;
+  position:absolute;
+  top:70px;
+  left:-430px;
+  transform:none;
+  filter:drop-shadow(0 22px 38px rgba(0,0,0,.30)) drop-shadow(0 0 28px rgba(255,165,42,.18));
+}
+.hero-mark:after{
+  width:920px;
+  left:-210px;
+  bottom:38px;
+}
+@media(max-width:1050px){
+  .hero-mark{width:540px;flex-basis:540px}
+  .hero-mark img{width:1750px;left:-355px;top:45px}
+}
+@media(max-width:720px){
+  .home-art{min-height:330px;overflow:hidden}
+  .hero-mark{width:430px;height:330px;flex-basis:430px;margin:0 auto}
+  .hero-mark img{width:1250px;left:-255px;top:35px}
+  .hero-mark:after{width:700px;left:-135px;bottom:18px}
+}
