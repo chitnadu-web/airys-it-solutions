@@ -1193,3 +1193,38 @@ body{
   .nav-cta{min-width:0 !important}
   .service-card .service-icon{margin:18px auto 20px !important}
 }
+
+
+/* GLOBAL TYPOGRAPHY — consistent, professional type system */
+html,body,button,input,select,textarea{font-family:"Inter",Arial,sans-serif !important;font-optical-sizing:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+h1,h2,h3,h4,h5,h6,.form-title,.nav-cta,.home-btn,.btn,.service-card h3,.why-item h3{font-family:"Space Grotesk","Inter",Arial,sans-serif !important;font-optical-sizing:auto}
+body{font-size:15px !important;line-height:1.65 !important}
+.nav{font-family:"Inter",Arial,sans-serif !important;font-size:14px !important;font-weight:500 !important;letter-spacing:.1px !important}
+.nav-cta{font-family:"Inter",Arial,sans-serif !important;font-weight:600 !important}
+.home-eyebrow,.eyebrow{font-family:"Inter",Arial,sans-serif !important;font-weight:700 !important;letter-spacing:2.8px !important}
+.home-copy h1{font-family:"Space Grotesk","Inter",Arial,sans-serif !important;font-weight:600 !important}
+.home-copy>p{font-family:"Inter",Arial,sans-serif !important;font-size:16px !important;line-height:1.72 !important}
+.home-btn{font-family:"Inter",Arial,sans-serif !important;font-weight:700 !important}
+.home-stat strong{font-family:"Space Grotesk","Inter",Arial,sans-serif !important;font-weight:600 !important}
+.home-stat span{font-family:"Inter",Arial,sans-serif !important;font-weight:500 !important}
+.section-heading h2,.about h2,.contact h2{font-family:"Space Grotesk","Inter",Arial,sans-serif !important;font-weight:600 !important}
+.section-heading p,.about p,.contact-copy>p{font-family:"Inter",Arial,sans-serif !important;font-size:14px !important;line-height:1.7 !important}
+.service-card h3,.why-item h3{font-family:"Space Grotesk","Inter",Arial,sans-serif !important;font-weight:600 !important;letter-spacing:.45px !important}
+.service-card p,.why-item p{font-family:"Inter",Arial,sans-serif !important;font-size:13px !important;line-height:1.65 !important}
+.service-card h3{font-size:15px !important}
+.why-item h3{font-size:16px !important}
+.why-item p{font-size:13px !important}
+.industry-grid div{font-family:"Inter",Arial,sans-serif !important;font-size:14px !important;font-weight:600 !important}
+.contact-details,.contact-details a,.contact-details div{font-family:"Inter",Arial,sans-serif !important;font-size:14px !important}
+.contact-form label{font-family:"Inter",Arial,sans-serif !important;font-size:11px !important}
+.contact-form input,.contact-form select,.contact-form textarea{font-family:"Inter",Arial,sans-serif !important;font-size:13px !important}
+.form-title{font-family:"Space Grotesk","Inter",Arial,sans-serif !important;font-weight:600 !important}
+.footer h4{font-family:"Inter",Arial,sans-serif !important;font-weight:700 !important}
+.footer a,.footer span,.footer p,.copyright{font-family:"Inter",Arial,sans-serif !important}
+@media(max-width:720px){
+  body{font-size:14px !important}
+  .home-copy>p{font-size:14px !important;line-height:1.7 !important}
+  .section-heading p,.about p,.contact-copy>p{font-size:13.5px !important}
+  .service-card h3{font-size:15px !important}
+  .service-card p,.why-item p{font-size:13px !important}
+}
