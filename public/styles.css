@@ -1052,3 +1052,95 @@ body{
   .home-stat strong{font-size:35px !important}
   .home-stat span{font-size:12px !important}
 }
+
+
+/* WHY US — increase card size and typography for clear readability */
+.why-section{
+  padding-top:72px !important;
+  padding-bottom:105px !important;
+}
+.why-heading .eyebrow{
+  font-size:15px !important;
+  letter-spacing:3.5px !important;
+  margin-bottom:28px !important;
+}
+.why-panel{
+  width:100% !important;
+  min-height:235px !important;
+  padding:42px 38px !important;
+  border-radius:9px !important;
+  gap:0 !important;
+}
+.why-item{
+  min-height:150px !important;
+  gap:22px !important;
+  padding:8px 34px !important;
+  align-items:center !important;
+}
+.why-icon{
+  flex:0 0 52px !important;
+  min-width:52px !important;
+}
+.why-icon svg{
+  width:52px !important;
+  height:52px !important;
+  stroke-width:1.8 !important;
+}
+.why-item h3{
+  font-size:16px !important;
+  letter-spacing:.5px !important;
+  line-height:1.35 !important;
+  margin:0 0 10px !important;
+}
+.why-item p{
+  font-size:14px !important;
+  line-height:1.6 !important;
+  color:#aeb9c2 !important;
+  max-width:245px !important;
+}
+@media(max-width:1050px){
+  .why-panel{
+    min-height:0 !important;
+    padding:30px !important;
+  }
+  .why-item{
+    min-height:145px !important;
+    padding:10px 25px !important;
+  }
+  .why-item h3{font-size:15px !important}
+  .why-item p{font-size:13px !important}
+}
+@media(max-width:720px){
+  .why-section{
+    padding-top:55px !important;
+    padding-bottom:75px !important;
+  }
+  .why-heading .eyebrow{
+    font-size:12px !important;
+    letter-spacing:3px !important;
+  }
+  .why-panel{
+    padding:24px !important;
+  }
+  .why-item{
+    min-height:120px !important;
+    padding:18px 0 !important;
+    gap:18px !important;
+  }
+  .why-icon{
+    flex:0 0 46px !important;
+    min-width:46px !important;
+  }
+  .why-icon svg{
+    width:46px !important;
+    height:46px !important;
+  }
+  .why-item h3{
+    font-size:15px !important;
+    margin-bottom:7px !important;
+  }
+  .why-item p{
+    font-size:13px !important;
+    line-height:1.55 !important;
+  }
+}
