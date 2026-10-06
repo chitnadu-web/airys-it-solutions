@@ -920,3 +920,64 @@ body{
   .home-stat strong{font-size:35px !important}
   .home-stat span{font-size:12px !important}
 }
+
+/* FINAL PIXEL-ALIGNMENT PASS FROM LATEST SCREENSHOT */
+.site-header{
+  height:108px !important;
+  background:#020b15 !important;
+}
+.site-header .nav-wrap{
+  width:calc(100% - 210px) !important;
+  max-width:1530px !important;
+}
+.site-header .brand{
+  width:320px !important;
+  height:88px !important;
+  transform:translateX(-105px);
+}
+.nav{
+  gap:38px !important;
+  font-size:16px !important;
+}
+.nav-cta{
+  min-width:190px !important;
+  height:58px !important;
+}
+
+/* Hide the embedded logo that is part of the supplied background.
+   The separate header logo is the only visible header logo. */
+.home-hero{
+  background-position:center -34px !important;
+}
+
+/* Keep the hero content at the same reference position */
+.home-container{
+  padding-top:205px !important;
+}
+
+/* Reference stats sit slightly lower and wider */
+.home-stats{
+  width:calc(100% - 210px) !important;
+  max-width:1530px !important;
+  bottom:32px !important;
+  gap:20px !important;
+}
+.home-stat{
+  height:190px !important;
+  min-height:190px !important;
+  padding:27px 40px !important;
+}
+
+/* Desktop reference sizing */
+@media(min-width:1200px){
+  .home-copy h1{font-size:64px !important}
+}
+@media(max-width:1050px){
+  .site-header .nav-wrap{width:calc(100% - 40px) !important}
+  .site-header .brand{transform:none !important}
+  .home-hero{background-position:center -20px !important}
+  .home-stats{width:calc(100% - 40px) !important}
+}
+@media(max-width:720px){
+  .home-hero{background-position:center -10px !important}
+}
