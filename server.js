@@ -31,7 +31,7 @@ app.post("/api/contact",async(req,res)=>{
       "Service: "+(service||"-")+"\n"+
       "Message:\n"+message;
 
-    const response=await fetch("https://cpaas.zoho.com/v1.1/email",{
+    const response=await fetch("https://cpaas.zoho.in/v1.1/email",{
       method:"POST",
       headers:{
         "Authorization":authorization,
