@@ -1144,3 +1144,29 @@ body{
     line-height:1.55 !important;
   }
 }
+
+/* FINAL HEADER LOGO FIX — keep the AIRYS logo visible */
+.site-header .brand{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:320px !important;
+  height:88px !important;
+  overflow:visible !important;
+  background:transparent !important;
+}
+.site-header .brand img{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  background:transparent !important;
+}
+@media(max-width:1050px){
+  .site-header .brand{width:240px !important;height:72px !important}
+}
+@media(max-width:720px){
+  .site-header .brand{width:175px !important;height:60px !important}
+}
