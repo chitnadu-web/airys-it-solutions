@@ -50,18 +50,14 @@ app.post("/api/contact",async(req,res)=>{
           }
         }],
         subject,
-        textbody,
-        reply_to:[{
-          address:email,
-          name:name
-        }]
+        textbody
       })
     });
 
     const result=await response.json().catch(()=>({}));
 
     if(!response.ok){
-      console.error("Zoho CPaaS API error:",response.status,result);
+      console.error("Zoho CPaaS API error:",response.status,JSON.stringify(result));
       return res.status(502).json({message:"Email service is temporarily unavailable."});
     }
 
